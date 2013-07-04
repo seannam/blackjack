@@ -14,7 +14,6 @@ def win(player, dealer)
 	end
 end
 
-
 def face_value(l)
 	if l == 'J' || l == 'Q' || l == 'K'
 		value = 10
@@ -82,7 +81,6 @@ card1 = face_value(card1)
 card2 = face_value(card2)
 
 score = card1.to_i + card2.to_i
-
 
 say "Your score is #{score}" 
 cond = true
