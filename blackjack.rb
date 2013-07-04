@@ -4,7 +4,7 @@ end
 
 def win(player, dealer)
 	if player > dealer && player <= 21 || dealer > 21
-		
+	
 	elsif dealer == 21
 		say "Dealer has blackjack! Dealer wins!"
 	elsif player < dealer 
@@ -138,12 +138,12 @@ end
 
 say "Play again? Y for yes, N for no"
 answer = gets.chomp
-if answer.upcase == 'Y'
-	play_again = true
-	deck.shuffle
-elsif answer.upcase == 'N'
-	play_again = false
-	say 'Thank you for playing!'
-	break
-end
+	if answer.upcase == 'Y'
+		play_again = true
+		deck.shuffle
+	elsif answer.upcase == 'N'
+		play_again = false
+		say 'Thank you for playing!'
+		break
+	end
 end
