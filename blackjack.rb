@@ -137,6 +137,7 @@ while cond
 		end
 	end
 end
+
 say "Play again? Y for yes, N for no"
 answer = gets.chomp
 if answer.upcase == 'Y'
